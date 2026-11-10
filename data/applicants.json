@@ -1,0 +1,98 @@
+[
+  {
+    "id": "a1",
+    "name": "Maya Chen",
+    "email": "maya.chen@example.com",
+    "resume": "Barista at Harbor Roast (2 years). Daily espresso machine work, latte art for specialty drinks, syrups inventory, and drip coffee batches. Trained new hires on pour over. Also handled petty cash and closing as keyholder twice a week.",
+    "cover_letter": "I love café culture and would thrive in a part-time role. Comfortable on the espresso machine and with latte art. Looking for afternoon and weekend shifts.",
+    "availability_preference": "part_time",
+    "ratings": {
+      "relevant_work_experience": 5,
+      "availability": 5,
+      "on_the_job_education": 5
+    },
+    "score": null,
+    "rank": null,
+    "score_breakdown": null
+  },
+  {
+    "id": "a2",
+    "name": "Jordan Lee",
+    "email": "jordan.lee@example.com",
+    "resume": "Server at Midtown Bistro for 18 months. Strong customer service, POS, and cash handling. Occasional help at the coffee station but no formal barista title.",
+    "cover_letter": "Excited to move into coffee. Available full time and eager to learn espresso and pour over techniques on the job.",
+    "availability_preference": "full_time",
+    "ratings": {
+      "relevant_work_experience": 3,
+      "availability": 2,
+      "on_the_job_education": 3
+    },
+    "score": null,
+    "rank": null,
+    "score_breakdown": null
+  },
+  {
+    "id": "a3",
+    "name": "Sam Rivera",
+    "email": "sam.rivera@example.com",
+    "resume": "Retail associate at City Books. Cashier experience and weekend shift lead. Mentions training coworkers but no restaurant or café background.",
+    "cover_letter": "Looking for part-time work near campus. Quick learner and reliable with schedules.",
+    "availability_preference": "part_time",
+    "ratings": {
+      "relevant_work_experience": 2,
+      "availability": 4,
+      "on_the_job_education": 2
+    },
+    "score": null,
+    "rank": null,
+    "score_breakdown": null
+  },
+  {
+    "id": "a4",
+    "name": "Alex Kim",
+    "email": "alex.kim@example.com",
+    "resume": "Former café assistant: prepped drip coffee, restocked syrups, wiped espresso machine steam wands. No keyholder duties yet.",
+    "cover_letter": "Prefer flexible hours while finishing school. Happy with mornings or evenings.",
+    "availability_preference": "flexible",
+    "ratings": {
+      "relevant_work_experience": 4,
+      "availability": 4,
+      "on_the_job_education": 2
+    },
+    "score": null,
+    "rank": null,
+    "score_breakdown": null
+  },
+  {
+    "id": "a5",
+    "name": "Riley Brooks",
+    "email": "riley.brooks@example.com",
+    "resume": "Host at Lakeside Grill. Greeting guests and managing waitlist. Limited cash experience.",
+    "cover_letter": "Interested in coffee as a career change. Available part time after 4pm.",
+    "availability_preference": "part_time",
+    "ratings": {
+      "relevant_work_experience": 2,
+      "availability": 5,
+      "on_the_job_education": 1
+    },
+    "score": null,
+    "rank": null,
+    "score_breakdown": null
+  },
+  {
+    "id": "a6",
+    "name": "Casey Nguyen",
+    "email": "casey.nguyen@example.com",
+    "resume": "Barista at Campus Grind (6 months). Espresso machine, pour over service, and basic latte art. Helped with opening checklist; not a keyholder.",
+    "cover_letter": "Seeking another café role with part-time hours. Confident with drip coffee and syrups for seasonal drinks.",
+    "availability_preference": "part_time",
+    "ratings": {
+      "relevant_work_experience": 4,
+      "availability": 5,
+      "on_the_job_education": 3
+    },
+    "score": null,
+    "rank": null,
+    "score_breakdown": null
+  }
+]

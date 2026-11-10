@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Apply — Harbor Roast{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Application portal</h1>
+  <p>
+    Submit a resume and cover letter for the open part-time barista role.
+    Optional 1–5 ratings are included so you can practice the full ranking flow.
+  </p>
+</section>
+
+<form method="post" action="/apply">
+  <label>
+    Full name
+    <input name="name" required placeholder="Jordan Lee" />
+  </label>
+
+  <label>
+    Email
+    <input name="email" type="email" required placeholder="jordan@example.com" />
+  </label>
+
+  <label>
+    Availability preference
+    <select name="availability_preference">
+      <option value="part_time">Part time</option>
+      <option value="full_time">Full time</option>
+      <option value="flexible">Flexible</option>
+      <option value="unknown">Unknown</option>
+    </select>
+  </label>
+
+  <label>
+    Resume
+    <textarea name="resume" required placeholder="Roles, skills, café equipment experience..."></textarea>
+  </label>
+
+  <label>
+    Cover letter
+    <textarea name="cover_letter" required placeholder="Why this café, schedule notes, strengths..."></textarea>
+  </label>
+
+  <p class="muted">Optional interviewer ratings (1–5). Leave blank if unscored.</p>
+  <div class="row">
+    <label>
+      Relevant experience
+      <input name="relevant_work_experience" type="number" min="1" max="5" />
+    </label>
+    <label>
+      Availability
+      <input name="availability" type="number" min="1" max="5" />
+    </label>
+    <label>
+      On-the-job education
+      <input name="on_the_job_education" type="number" min="1" max="5" />
+    </label>
+  </div>
+
+  <button type="submit">Submit application</button>
+</form>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Top Candidates — Harbor Roast{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Top candidates</h1>
+  <p>
+    Review ranked applicants for the open barista role. Ranking logic lives in
+    <code>src/ranking.py</code> and is intentionally incomplete.
+  </p>
+</section>
+
+<div class="banner">
+  Starter mode: candidates are shown in submission order with placeholder scores.
+  Finish the ranking module to sort and explain recommendations.
+</div>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Candidate</th>
+        <th>Availability</th>
+        <th>Ratings (1–5)</th>
+        <th>Score</th>
+        <th>Breakdown</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in ranked %}
+      <tr>
+        <td class="rank">{{ item.rank }}</td>
+        <td>
+          <strong>{{ item.applicant.name }}</strong><br />
+          <span class="muted">{{ item.applicant.email }}</span>
+          <details>
+            <summary class="muted">Resume / cover letter</summary>
+            <p><strong>Resume</strong><br />{{ item.applicant.resume }}</p>
+            <p><strong>Cover letter</strong><br />{{ item.applicant.cover_letter }}</p>
+          </details>
+        </td>
+        <td><span class="pill">{{ item.applicant.availability_preference.value }}</span></td>
+        <td class="muted">
+          {% if item.applicant.ratings %}
+          Exp {{ item.applicant.ratings.relevant_work_experience }} ·
+          Avail {{ item.applicant.ratings.availability }} ·
+          Edu {{ item.applicant.ratings.on_the_job_education }}
+          {% else %}
+          —
+          {% endif %}
+        </td>
+        <td>{{ "%.1f"|format(item.score) }}</td>
+        <td class="breakdown">
+          {% for key, value in item.breakdown.items() %}
+          <div>{{ key }}: {{ "%.1f"|format(value) }}</div>
+          {% endfor %}
+        </td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="6" class="muted">No applicants yet. Submit one via the apply portal.</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
